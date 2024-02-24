@@ -14,6 +14,7 @@ Durante o período de inscrições, a equipe responsável pelo programa e outros
 
 ## 📝 Solução
 > arquivo em .xlsx
+
 **:white_check_mark: Conferimos os dados, verificando possíveis lacunas e erros.**
 
 **:white_check_mark: Métrica**
