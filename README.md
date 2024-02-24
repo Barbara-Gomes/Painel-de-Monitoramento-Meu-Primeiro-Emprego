@@ -31,7 +31,7 @@ Durante o período de inscrições, a equipe responsável pelo programa e outros
 
 **:white_check_mark: Gráfico por Executora**
 
-
+**:white_check_mark: Publicação e Atualização**
 
 
 <div>
