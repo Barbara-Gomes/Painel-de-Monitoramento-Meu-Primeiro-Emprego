@@ -8,7 +8,7 @@ O Meu Primeiro Emprego é um programa de qualificação profissional gratuito, d
 ## Necessidades do Projeto
 Durante o período de inscrições, a equipe responsável pelo programa aplica diversas estratégias de divulgação, que variam de acordo com a localidade. Por isso, era necessária uma ferramenta para monitorar a variação do número de inscrições e avaliar se as estratégias aplicadas estavam funcionando do modo esperado. A direção técnica do programa optou por um painel construído no Power-BI.
 
-## Objetivo
+## Objetivos
 * Manipular dados extraídos via SGCP da base de dados da Coordenadoria de Ensino Técnico, Tecnológico e Profissionalizante (CETTPRO).
 * Criar um painel de visualização de dados utilizando o Power BI, para monitoramento e avaliação das inscrições no programa.
 
