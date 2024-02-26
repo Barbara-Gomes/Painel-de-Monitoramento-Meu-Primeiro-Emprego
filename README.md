@@ -1,6 +1,6 @@
 <div align="justify">
   
-# :chart_with_upwards_trend: [Painel de Monitoramento e Avaliação do Qualifica-SP | Meu Primeiro Emprego]
+# :chart_with_upwards_trend: [Painel de Monitoramento e Avaliação das Inscrições no Qualifica-SP | Meu Primeiro Emprego]
 ## Qualifica-SP | Meu Primeiro Emprego
 O Meu Primeiro Emprego é um programa de qualificação profissional gratuito, destinado a jovens entre 16 e 24 anos com Ensino Fundamental Completo. Uma iniciativa do Governo do Estado de São Paulo para impulsionar este público a alcançar sua primeira oportunidade no mercado de trabalho. As inscrições acontecem semestralmente, com duração aproximada de um mês. Os cursos são ofertados em instituições técnicas públicas e privadas de todo o estado, alcançando todas as Regiões Administrativas de São Paulo.
 
