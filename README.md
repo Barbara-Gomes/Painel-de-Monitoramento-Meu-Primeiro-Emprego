@@ -10,17 +10,28 @@ Durante o período de inscrições, a equipe responsável pelo programa e outros
 
 ## Objetivos
 * Manipular dados extraídos via SGCP da base de dados da Coordenadoria de Ensino Técnico, Tecnológico e Profissionalizante (CETTPRO).
-* Criar um painel de visualização de dados utilizando o Power BI, para monitoramento e avaliação das inscrições no programa.
+* Criar um painel de visualização de dados utilizando o Power BI, para monitoramento e avaliação das inscrições no Programa Meu Primeiro Emprego.
 
 ## 📝 Solução
-> arquivo em .xlsx
+> Os dados extraídos via SGCP estavam em formato .xlsx e, por isso, decidimos realizar a limpeza e manipulação dos dados no Excel.
 
 **:white_check_mark: Conferimos os dados, verificando possíveis lacunas e erros.**
 
-**:white_check_mark: Métrica**
+**:white_check_mark: Segmentações**
+O trabalho de divulgação é realizado pela equipe CETTPRO, SECOM, prefeituras, unidades de ensino, residentes e outros parceiros. Por isso, era necessário criar uma painel com segmentações por Município, Regiões Administrativa, Unidade de Ensino e Centro Regional. Os dados extraídos já possuíam todas as identificações, exceto por Centro Regional. Para isso, utilizamos outra planinha com as segmentações. 
 
-**:white_check_mark: Título e Logo**
-> O trabalho de divulgação é realizado pela equipe CETTPRO, SECOM, prefeituras, unidades de ensino, residentes e outros parceiros. Por isso, era necessário criar uma painel com segmentações por Município, Regiões Administrativa, Unidade de Ensino e Centro Regional.
+Primeiro, relacionamos os nomes dos municípios ao número do IBGE através da função PROCV, para verificar se havia alguma inconsistência entre as planilhas. Após a verificação e correção dos dados, relacionamos o nome do Município ao seu Centro Regional, utilizando as funções PROCV para criar as referências necessárias; e SEERRO para substituir os erros gerados por cursos remotos, que têm oferta em todos os municípios.
+> =PROCV(C2,'Municípios CR'!A:B,2,0)  |   =SEERRO(PROCV(C2,'Municípios CR'!A:G,6,0), "Oferta em todos os municípios")
+
+**:white_check_mark: Métrica**
+Para realizar a avaliação, a direção técnica solicitou a inclusão de uma medida baseada na experiência com edições anteriores. Ainda no Excel, criamos a métrica através da função SE.
+> =SE(O2<(K2*0.4),"Péssimo",SE(O2<(K2*0.8),"Ruim",SE(O2<(K2*1.3),"Bom",SE(O2<(K2*2),"Muito bom",SE(O2>=(K2*2),"Ótimo")))))
+
+> Métrica utilizada: abaixo de 40% de inscritos por turma - péssimo; 40% a 79% – ruim; 80% a 129% – bom; entre 130% e 200% – muito bom; mais que 200% – ótimo.
+
+**:white_check_mark: Construção do Painel**
+* Realizamos o upload da planilha, conferimos se o Power-BI reconhecia todos os dados e seus respectivos formatos.
+
 
 **:white_check_mark: Tabela**
 
