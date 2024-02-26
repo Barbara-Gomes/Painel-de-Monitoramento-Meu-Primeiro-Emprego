@@ -18,7 +18,8 @@ Durante o período de inscrições, a equipe responsável pelo programa e outros
 **:white_check_mark: Conferimos os dados, verificando possíveis lacunas e erros.**
 
 **:white_check_mark: Segmentações**
-O trabalho de divulgação é realizado pela equipe CETTPRO, SECOM, prefeituras, unidades de ensino, residentes e outros parceiros. Por isso, era necessário criar uma painel com segmentações por Município, Regiões Administrativa, Unidade de Ensino e Centro Regional. Os dados extraídos já possuíam todas as identificações, exceto por Centro Regional. Para isso, utilizamos outra planinha com as segmentações. 
+
+> O trabalho de divulgação é realizado pela equipe CETTPRO, SECOM, prefeituras, unidades de ensino, residentes e outros parceiros. Por isso, era necessário criar uma painel com segmentações por Município, Regiões Administrativa, Unidade de Ensino e Centro Regional. Os dados extraídos já possuíam todas as identificações, exceto por Centro Regional. Para isso, utilizamos outra planinha com as segmentações. 
 
 Primeiro, relacionamos os nomes dos municípios ao número do IBGE através da função PROCV, para verificar se havia alguma inconsistência entre as planilhas. Após a verificação e correção dos dados, relacionamos o nome do Município ao seu Centro Regional, utilizando as funções PROCV para criar as referências necessárias; e SEERRO para substituir os erros gerados por cursos remotos, que têm oferta em todos os municípios.
 > =PROCV(C2,'Municípios CR'!A:B,2,0)  |   =SEERRO(PROCV(C2,'Municípios CR'!A:G,6,0), "Oferta em todos os municípios")
@@ -31,19 +32,11 @@ Para realizar a avaliação, a direção técnica solicitou a inclusão de uma m
 
 **:white_check_mark: Construção do Painel**
 * Realizamos o upload da planilha, conferimos se o Power-BI reconhecia todos os dados e seus respectivos formatos.
+* Criamos uma tabela com 8 colunas: Município, Eixo, Curso, Período, Unidade de Ensino, Vagas, Inscritos e Status (referente à métrica utilizada).
+* Adicionamos filtros para criar as segmentações por localidade e unidade de ensino. Acrescentamos também segmentações por Curso e Turno, para tornar possível comparar a adesão entre eixos e horários. E um botão para limpar todos os filtros.
+* O Total de Vagas, Inscritos e Turmas ganhou visualização através de CARDS.
+* Introduzimos um gráfico de barras clusterizados, para comprar a quantidade de inscrições por executoras dos cursos.
+* E, por fim, adicionamos título, logo e revisamos o design do projeto, editando rótulos, títulos, fonte e cores.
 
-
-**:white_check_mark: Tabela**
-
-**:white_check_mark: Filtros**
->Adicionamos filtros para criar as segmentações por localidade e unidade de ensino.
-> Acrescentamos também segmentações por Curso e Turno, para tornar possível comparar a adesão entre eixos e horários.
-
-**:white_check_mark: Total de Vagas, Inscritos e Turmas**
-
-**:white_check_mark: Gráfico por Executora**
-
-**:white_check_mark: Publicação e Atualização**
-
-
+**:white_check_mark: Publicamos o painel e compartilhamos com todos os atores envolvidos no processo de divulgação; e realizamos diariamente a atualização durante todo o período de inscrições.**
 <div>
